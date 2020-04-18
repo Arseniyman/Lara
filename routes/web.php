@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@getHomePage')->name('home');
 
-Route::get('/goods', 'GoodController@getGoods')->name('goods');
+Route::get('/goods', 'GoodController@getGoodPage')->name('goods');
 
-
-// HomeController@getHomePage
+Route::get('/support', 'SupportController@getSupportPage')->name('support');

@@ -6,11 +6,12 @@ services:
     build:
       context: ./docker/web
     ports:
-      - 8990:80
+      - 8950:80
     volumes:
       - ./:/var/www/html
     depends_on:
       - db
+      - php
  
   db:
     image: mysql:5.7
@@ -24,6 +25,18 @@ services:
     expose:
       - '3306'
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+
+
+  php:
+    build:
+        context: .
+        dockerfile: docker/web/php.dockerfile
+    ports:
+        - 9000:9000
+    depends_on:
+        - db
+    volumes:
+        - .:/var/www/html
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
