@@ -19,6 +19,6 @@ class GoodController extends Controller {
         
         $goods = Good::all();
 
-        return view('good');
+        return view('good', compact('goods'));
     }
 }

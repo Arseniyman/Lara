@@ -1118,17 +1118,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v7.6.2",
-        "version_normalized": "7.6.2.0",
+        "version": "v7.8.1",
+        "version_normalized": "7.8.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "695be25d84b5cedd0026c428d4e9697fe8cd06f9"
+            "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/695be25d84b5cedd0026c428d4e9697fe8cd06f9",
-            "reference": "695be25d84b5cedd0026c428d4e9697fe8cd06f9",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
+            "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
             "shasum": ""
         },
         "require": {
@@ -1232,10 +1232,11 @@
             "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
             "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0).",
             "symfony/cache": "Required to PSR-6 cache bridge (^5.0).",
+            "symfony/filesystem": "Required to create relative storage directory symbolic links (^5.0).",
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2020-04-15T20:57:47+00:00",
+        "time": "2020-04-24T17:21:56+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1337,17 +1338,17 @@
     },
     {
         "name": "league/commonmark",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/thephpleague/commonmark.git",
-            "reference": "c995966d35424bae20f76f8b31248099487a3f57"
+            "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c995966d35424bae20f76f8b31248099487a3f57",
-            "reference": "c995966d35424bae20f76f8b31248099487a3f57",
+            "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/9e780d972185e4f737a03bade0fd34a9e67bbf31",
+            "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31",
             "shasum": ""
         },
         "require": {
@@ -1370,7 +1371,7 @@
             "scrutinizer/ocular": "^1.5",
             "symfony/finder": "^4.2"
         },
-        "time": "2020-04-20T13:36:51+00:00",
+        "time": "2020-04-24T13:39:56+00:00",
         "bin": [
             "bin/commonmark"
         ],
@@ -1409,6 +1410,32 @@
             "markdown",
             "md",
             "parser"
+        ],
+        "funding": [
+            {
+                "url": "https://enjoy.gitstore.app/repositories/thephpleague/commonmark",
+                "type": "custom"
+            },
+            {
+                "url": "https://www.colinodell.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://www.paypal.me/colinpodell/10.00",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/colinodell",
+                "type": "github"
+            },
+            {
+                "url": "https://www.patreon.com/colinodell",
+                "type": "patreon"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/league/commonmark",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -2081,26 +2108,23 @@
     },
     {
         "name": "phpdocumentor/reflection-common",
-        "version": "2.0.0",
-        "version_normalized": "2.0.0.0",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-            "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
+            "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
-            "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
+            "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
             "shasum": ""
         },
         "require": {
             "php": ">=7.1"
         },
-        "require-dev": {
-            "phpunit/phpunit": "~6"
-        },
-        "time": "2018-08-07T13:53:10+00:00",
+        "time": "2020-04-27T09:25:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2622,17 +2646,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "8.5.3",
-        "version_normalized": "8.5.3.0",
+        "version": "8.5.4",
+        "version_normalized": "8.5.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "67750516bc02f300e2742fed2f50177f8f37bedf"
+            "reference": "8474e22d7d642f665084ba5ec780626cbd1efd23"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/67750516bc02f300e2742fed2f50177f8f37bedf",
-            "reference": "67750516bc02f300e2742fed2f50177f8f37bedf",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8474e22d7d642f665084ba5ec780626cbd1efd23",
+            "reference": "8474e22d7d642f665084ba5ec780626cbd1efd23",
             "shasum": ""
         },
         "require": {
@@ -2670,7 +2694,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^2.0.0"
         },
-        "time": "2020-03-31T08:52:04+00:00",
+        "time": "2020-04-23T04:39:42+00:00",
         "bin": [
             "phpunit"
         ],
@@ -2703,6 +2727,16 @@
             "phpunit",
             "testing",
             "xunit"
+        ],
+        "funding": [
+            {
+                "url": "https://phpunit.de/donate.html",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
         ]
     },
     {
