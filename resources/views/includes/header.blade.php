@@ -2,8 +2,7 @@
     <a class="my-0 mr-md-auto font-weight-normal" href="/"><h5 >Omazon</h5></a>
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="/">Товары</a>
-      {{-- <a class="p-2 text-dark" href="/goods">Товары</a> --}}
       <a class="p-2 text-dark" href="/support">Поддержка</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Корзина</a>
+    <a class="btn btn-outline-primary" href="/cart">Корзина</a>
   </div>
