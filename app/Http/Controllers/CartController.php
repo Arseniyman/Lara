@@ -25,7 +25,8 @@ class CartController extends Controller
     public function getCartPage(Request $request) {
         
         $numGoodsCart = $request->session()->all();
-        $goods = Good::all();
+
+        $goods = Good::find(array_keys($numGoodsCart));
         return view("cart", [
             "goods" => $goods,
             "numGoodsCart" => $numGoodsCart 

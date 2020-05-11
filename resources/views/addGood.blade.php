@@ -5,7 +5,6 @@
 @endsection
 
 @section("container")
-    {{-- <h1>Добавить новый товар</h1> --}}
     @if($errors->any())
         <div class="alert alert-danger">
             <ol>
