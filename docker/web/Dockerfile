@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.19.1
 
 COPY nginxserv.conf /etc/nginx/conf.d/default.conf
 

@@ -16,16 +16,18 @@ services:
   db:
     image: mysql:5.7
     restart: always
-    env_file:
-      ./.env
+    environment:
+     - MYSQL_USER=sysadm
+     - MYSQL_PASSWORD=horosh
+     - MYSQL_ROOT_PASSWORD=root
+     - TZ=Europe/Moscow
     ports:
       - 3306:3306
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     volumes:
-      - ./database/data:/var/lib/mysql
+      - ./database/SQLScripts:/docker-entrypoint-initdb.d
     expose:
       - '3306'
-    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
-
 
   php:
     build:
@@ -39,7 +41,7 @@ services:
         - .:/var/www/html
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:5
     restart: always
     depends_on:
       - db
